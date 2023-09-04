@@ -1,0 +1,18 @@
+{
+  "name": "Special",
+  "version": "1.0.0",
+  "description": "This app to special cars",
+  "main": "index.js",
+  "author": "nandry556@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "prisma": "^5.2.0"
+  }
+}
