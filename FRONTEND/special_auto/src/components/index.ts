@@ -1,2 +1,3 @@
 export { default as Navbar } from './navbar/Navbar';
-export { default as User } from './user/user';
+export { default as User } from './user/User';
+export { default as Sidebar } from './sidebar/Sidebar';

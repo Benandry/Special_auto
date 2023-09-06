@@ -1,16 +1,22 @@
-import { useState } from "react"
-import { Navbar, User } from "./components"
+
+import { Routes, Route } from "react-router-dom"
+import { Sidebar, User } from "./components"
+import "./style.css"
+import NewUser from "./components/user/NewUser"
 
 const App = () => {
-  const [count,setCount] = useState(0)
   return (
-    <div>
-      <h1>Hello world </h1>
-      <User/>
-      <Navbar/>
-      <p> { count } </p>
-      <button onClick={() => setCount(prev => prev+1)}> Increment </button>
-    </div>
+    <>
+       {/* <Navbar/> */}
+   
+       
+       <Sidebar>
+        <Routes>
+          <Route path="/users" element={<User/>}/>
+          <Route path="/users/new" element={<NewUser/>}/>
+        </Routes>
+       </Sidebar>
+    </>
   )
 }
 
